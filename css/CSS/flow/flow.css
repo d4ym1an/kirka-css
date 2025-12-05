@@ -1,0 +1,475 @@
+:root {
+    --bg: url("https://irrvlo.xyz/pattern.webp") repeat;
+    --logo: url("https://irrvlo.xyz/flow.png");
+}
+
+* {
+    border-radius: unset !important;
+    text-shadow: unset !important;
+    box-shadow: unset !important;
+    border-color: var(--dark) !important;
+    outline: unset !important;
+    -webkit-text-stroke: unset !important;
+}
+
+body {
+    background: var(--dark);
+    --flow: #ff5900;
+    --alt: #1bff00;
+    --dark: #131313 !important;
+    --light-dark: #1c1c1c !important;
+    --wNmwn-1: var(--dark) !important;
+    --wNmwn-2: var(--dark) !important;
+    --wNmwn-3: var(--dark) !important;
+    --wNmwn-4: var(--dark) !important;
+    --wNmwn-5: var(--dark) !important;
+    --wNmwn-6: var(--dark) !important;
+    --black-5: var(--dark) !important;
+    --WwmNw-1: var(--flow) !important;
+    --WwmNw-2: var(--flow) !important;
+    --WwmNw-3: var(--flow) !important;
+}
+
+.button:not(.item-btn),
+.btn:not(.item-btn) {
+    background: var(--flow) !important;
+}
+
+.button .text,
+.btn .text {
+    transform: unset !important;
+}
+
+.button .border,
+.btn .border {
+    display: none !important;
+}
+
+/* juice */
+.news-card {
+    background: var(--dark) !important;
+    border: unset !important;
+}
+
+.news-card .new {
+    background: var(--flow);
+}
+
+.news-card .news-title {
+    color: var(--flow);
+}
+
+
+/* recoloring */
+/* white text */
+.info-key-cont,
+.tab .label,
+.team-score .label,
+.end-modal .team-list-players > .card-cont > .label div,
+.tab-team-info .label{
+    color: white !important;
+}
+
+/* orange text */
+.label,
+.death-cont .clan,
+.label-killed,
+.end-modal .top-name,
+.tab-info .list-value,
+.left-container .player .name .label,
+.description,
+.message .name:not(.friend),
+.available-rooms,
+.online,
+.clan-tag,
+.user-info .level-cont,
+.levels,
+.lvl-leader,
+.message .author-name,
+.message .lvl,
+.profile .progress-level-value,
+.profile .stat-name,
+.tabs .active,
+.tabs .text-2:hover,
+.pages-nav .active, 
+.pages-nav .nav:hover,
+.leaderboard-cont .label-primary,
+.leaderboard-cont .awards-span,
+.my-clan .champions-league,
+.my-clan .champions-scores,
+.my-clan .all-scores-label,
+.my-clan .name.bolder,
+.killer-level,
+.container-card .head,
+.player-level,
+.tab-bar .active,
+.tab-bar .tab:hover {
+    color: var(--flow) !important;
+}
+
+/* orange bg */
+.christmas .box,
+.exit-btn,
+.tooltip,
+.level-card,
+.progress .buy-btn,
+.progress-helper,
+.levels .level .progress,
+.levels-circle .lvl,
+.level-progress,
+.reqs,
+.tab > .label,
+.close,
+.cont-endurance .endurance-progress,
+.label.red,
+.label-team.red,
+.label-team.red-team,
+.select .items div:hover,
+.settings #presets .items div:hover,
+.quest .progress-line .progress,
+.user-info .progress,
+.next-round .progress,
+.cont-hp .hp-progress,
+.profile .progress {
+    background: var(--flow) !important;
+}
+
+
+
+/* dark text */
+/* lightdark bg */
+#gui .footer,
+.christmas .box.active,
+.button:hover,
+button:hover,
+.bg-progress,
+.bg-level,
+.quests-container .rewards,
+.message.trade,
+.custom-checkbox > input:not(:checked) + span:before,
+.mini-card .price,
+.store-skins .weapon,
+.list-cont.list-players,
+.list-cont .top-items,
+.info-awards,
+.container .top-bar,
+.container .top-bar .left div,
+.container .tabs .tab,
+.champions-list,
+.champions-container .reset-time,
+.awards-cont .card,
+.my-clan .list-container,
+.inventory .subject,
+#inspect-modal .container-card .name,
+#inspect-modal .container-card .label,
+.select .items,
+.live-streams,
+.live-streams + .card-list,
+.live-streams + .card-list .card,
+.news .card .head,
+.terms .head,
+.servers .server,
+.inventory .tab-bar,
+.inventory .gun,
+.friends .head-text,
+.friends .friend,
+.settings .box,
+.settings #presets .items,
+.profile .card,
+.scrollCancel,
+.esc-interface .player-list .player-right div {
+    background: var(--light-dark) !important;
+    --hover-color: var(--light-dark) !important;
+}
+
+
+/* dark bg */
+.quests,
+#gui,
+.info-key-cont,
+#continue,
+.inventory .left,
+.inventory .avatar,
+.gun,
+.select-regions-cont,
+.container-card .wrapper,
+.changelog-item,
+.info-icon,
+.clans,
+.container,
+.money,
+.card-cont,
+.select-region,
+.select-mod,
+.quest,
+#dailyQuests > .tabs-wrapper > .tabs,
+#dailyQuests,
+.icon-btn,
+.label.blue,
+.label-team.blue,
+.label-team.blue-team,
+.list-cont .item,
+.container .tabs,
+.champions-list .item,
+.my-clan .list-container .item-content,
+.inventory .subject .count,
+.container-card,
+.news .card,
+.terms .box,
+.settings .tab-header,
+.quests .completed {
+    background: var(--dark) !important;
+}
+
+/* transparent dark */
+.player-cont,
+.death-cont .user-card,
+.death-cont,
+.esc-interface,
+.container-pre-end div,
+.alert-default,
+.tab-info,
+.tab-info .player,
+.kill-bar-cont .kill-bar-item,
+.spectator > div,
+.searching-game .top,
+.searching-game .center,
+.searching-game .bottom,
+.loading-scene .player .level,
+.loading-scene .player,
+.background,
+.left-container .player,
+.esc-interface .right-container,
+.live-streams .head,
+.live-streams + .card-list .title,
+.live-streams + .card-list .card .head,
+.friends .level-cont,
+.friends .add-delete div,
+.desktop-game-interface .infos,
+.desktop-game-interface .list-controls,
+.tab-team-info,
+.state-cont div div,
+.end-modal .card-cont {
+    background: #1313136b !important;
+}
+
+/* alt */
+.message .is-friend {
+    color: var(--alt) !important;
+}
+
+/* remove */
+.spectator .list-controls,
+#cmpPersistentLink,
+.weapons-cont .mWwn,
+.end-modal .bottom,
+.tab-info .head,
+.input-wrapper .info-key-cont,
+button > .triangle,
+button > .borders,
+button::before,
+button::after,
+.chat .info,
+.weapons-cont .list-weapons {
+    display: none !important;
+}
+
+/* transparent bg */
+.tab,
+.container-card .name,
+.mWwn,
+.description,
+.input,
+.messages,
+.vm--overlay,
+.cont-endurance,
+.hp-cont .hp-title, 
+.hp-cont .cont-hp,
+.inventory .subjects,
+.container .loader,
+.quests .time-left,
+.inventory .bottom,
+.friends .add-friends,
+.quest .progress-line,
+.interface .left-icons,
+.profile .progress-line,
+.user-info .level-value,
+.next-round .progress-line,
+.levels,
+.interface .player-cont,
+.tab-team-info .player-cont,
+.lvl-leader,
+.killer-level,
+.player-level {
+    background: transparent !important;
+}
+
+/* margin reset */
+.chat .input,
+.top-bar {
+    margin: unset !important;
+}
+
+.select-region,
+.select-mod,
+#dailyQuests > .tabs-wrapper > .s > .tab,
+#dailyQuests,
+.card-cont,
+.avatar-info,
+.user-info,
+.money,
+.icon-btn,
+button {
+    border: none !important;
+}
+
+button {
+    transform: none !important;
+}
+
+.input {
+    border: 0.15rem solid var(--dark) !important
+}
+
+.card-cont:nth-child(2):hover {
+    background: var(--secondary-2) !important;
+}
+
+.reward,
+#dailyQuests > .tabs-wrapper > .tabs > .tab {
+    background: transparent !important;
+}
+
+.christmas .box.active {
+    outline: 0.2rem solid var(--flow) !important;
+}
+
+.christmas .box:hover {
+    outline: 0.2rem solid white !important;
+}
+
+.spectator .infos {
+    bottom: 4rem !important;
+    font-size: 1.25rem !important;
+}
+
+/* font */
+@font-face {
+    font-family: Forza;
+    src: url(https://rawcdn.githack.com/irrvlo/fonts/a8f0567c4db9931a7f404e909d15c111c11710b1/Forza-Medium.ttf) format('TrueType');
+    font-display: swap
+}
+* {
+    font-family: Forza !important;
+    -webkit-text-stroke: unset !important;
+    text-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+.ach-cont {
+    top: 0 !important;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ach-cont > .animate-cont {
+    transform: none !important;
+    width: auto;
+    height: auto;
+}
+.animate-cont > svg {
+    display: none;
+}
+.animate-cont > .text {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    margin: unset !important;
+    margin-left: 15rem !important;
+}
+.animate-cont > .text > span > span {
+    color: white !important;
+}
+
+.map-button.active,
+.mod-button.active {
+    border: .25rem solid var(--flow) !important;
+}
+
+.mini-map-cont {
+    top: 0.5rem !important;
+    left: unset !important;
+    right: 0.5rem !important;
+    display: flex !important;
+    gap: 0.25rem;
+}
+
+.mini-map-cont div {
+    position: unset !important;
+    display: flex !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+}
+
+.mini-map-cont .mod:before {
+    content: "("
+}
+
+.mini-map-cont .mod:after {
+    content: ")"
+}
+
+/* background */
+.pattern-bg,
+.bg-radial {
+    display: none;
+}
+
+@-webkit-keyframes animate {
+    to {
+        transform: translateY(30%);
+    }
+}
+
+.interface .background {
+    background: var(--bg) !important;
+    height: 300%;
+    background-position: 0px 0px;
+    -webkit-animation: animate 30s linear infinite!important;
+}
+
+.end-modal {
+    background: var(--bg) !important;
+}
+
+.weapons .mWwn,
+.interface .logo {
+    content: var(--logo) !important;
+    width: 5rem;
+    height: auto !important;
+}
+
+
+
+
+
+/* hide */
+.settings-and-socicons .card-cont:nth-child(1),
+.settings-and-socicons .card-cont:nth-child(2) {
+    visibility: hidden !important;
+}
+
+/* news tab */
+.news .changelog-date {
+    padding: 10px;
+    background: var(--light-dark);
+    border-bottom: 2px solid black !important
+}
+
+/* checkbox */
+.custom-checkbox > input:checked + span:before {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='hsl(42, 85%, 100%)' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e") var(--dark) !important;
+    border-color: var(--flow) !important;
+}
+

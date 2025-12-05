@@ -1,0 +1,190 @@
+/* Hover to Show*/
+.soc-group,
+.left-icons,
+.select-mod,
+.play-btn,
+.select-region,
+.private-btn,
+.settings,
+.avatar-info,
+.progress-label,
+.user-info,
+.moneys,
+.quests {
+    opacity: 0.01 !important;
+}
+.soc-group:hover,
+.left-icons:hover,
+.select-mod:hover,
+.button:hover,
+.select-region:hover,
+.private-btn:hover,
+.settings:hover,
+.avatar-info:hover,
+.progress-label:hover,
+.user-info:hover,
+.moneys:hover,
+.quests:hover {
+    opacity: 1 !important;
+    transition: all 0.4s ease-in-out;
+}
+.soc-group:hover,
+.left-icons:hover,
+.select-mod:hover,
+.button:hover,
+.select-region:hover,
+.private-btn:hover,
+.settings:hover,
+.avatar-info:hover,
+.moneys:hover,
+.quests:hover {
+    opacity: 1 !important;
+    transition: all 0.4s ease-in-out;
+}
+/* Transparent */
+.box,
+.input,
+.settings,
+.quests,
+.quest,
+.tip,
+.amount,
+.reward,
+.progress-line,
+.card-cont,
+.container-card,
+.progress[data-v-49c6809c],
+.background,
+.container button .border-top,
+.container button .border-bottom,
+.messages.messages-cont.small,
+.title,
+.card-list,
+.head,
+.changelog-item,
+.card,
+.live-streams,
+.left,
+.level,
+.clans,
+.hub-container,
+.mobile-fullscreen,
+.add-friends,
+.tab-bar,
+.top-items,
+.subject,
+.inventory .avatar,
+.inventory .bottom,
+.head-text,
+.reset-time,
+.info-awards,
+.news,
+.list-cont,
+.card-profile,
+.profile .k-d,
+.profile,
+.cont {
+    background: transparent !important;
+    border: none !important;
+}
+.progress[data-v-0f7a25c2] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+.active {
+    border-bottom: var(--asscentColor) solid 0.125rem !important;
+}
+/* Left Menu */
+.left-icons {
+    background: transparent !important;
+    position: relative;
+    bottom: 55px;
+}
+.left-icons,
+.icon-btn {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    position: relative;
+    bottom: 55px;
+}
+.text-icon {
+    display: none !important;
+}
+.left-icons .icon-btn:hover {
+    border-top: transparent !important;
+    position: relative;
+    bottom: 55px;
+}
+.right-interface {
+    z-index: 1 !important;
+}
+.text-icon,
+.left-icons .icon-btn svg {
+    visibility: visible !important;
+}
+.soc-group:nth-child(1),
+.soc-group:nth-child(2) {
+    background: transparent !important;
+    border: none;
+    visibility: hidden;
+}
+.soc-group:nth-child(1):hover,
+.soc-group:nth-child(2):hover {
+    background: none !important;
+    transform: scale(1.5);
+    visibility: hidden;
+}
+#play-btn {
+    background: transparent !important;
+    box-shadow: 4px 4px 10px #0000 !important;
+}
+#play-btn .border-top,
+#play-btn .border-bottom {
+    background: none;
+}
+.select-mods-cont,
+.select-mods-cont > hr {
+    background: transparent!important;
+    border: none !important;
+    margin-right: 500px;
+    border: 1px solid var(--asscentColor);
+}
+.custom-checkbox > input:checked + span[data-v-47e1b746]:before {
+    background-color: var(--asscentColor);
+    border-color: var(--asscentColor);
+}
+.soc-group[data-v-f6928a74],
+.text-soc[data-v-26102dd2] {
+    display: none !important;
+}
+.private-btn > span[data-v-47e1b746] {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/1014943556806394018/261370-200.png);
+    position: fixed;
+    left: 50px;
+    width: 40px;
+}
+.select-mod,
+.select-region {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.select-regions-cont {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+#dailyQuests {
+    position: fixed;
+    top: 130px;
+    border: none;
+    border-radius: 0;
+    z-index: 0 !important;
+    overflow: auto;
+}

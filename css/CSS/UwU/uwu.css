@@ -1,0 +1,1337 @@
+/* kill icon */
+.animate-cont {
+    content: url(https://media.discordapp.net/attachments/1028074836238549095/1075570845566632118/170-1703579___pink-things__-cute-teddy-bear-for-drawing-removebg-preview.png);
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+}
+    
+/* red buttons that I changed to purple*/
+    
+    .button[data-v-02c36fca]:after{--hover-color: #dd59a2f2}
+
+/* borders around stuff */
+
+.container[data-v-d54ab83a] {
+    border: #dd59a2f2 !important;
+    background: #dd59a266 !important;
+}
+
+.select-regions-cont {   
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+}
+
+.bg[data-v-4c542c70] {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+}
+    
+.hub-container {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+}
+    
+.store {    
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+}
+    
+.container-card[data-v-1bf1e387] {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;        
+}
+
+.container[data-v-d54ab83a]{
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+}
+    
+    
+/* Hide Logo */
+.interface .logo {
+    content: url(https://cdn.discordapp.com/attachments/1028074836238549095/1072513648146272307/image.png);
+    margin-top: 520px;
+    max-width: 400px;
+    max-height: 200px;
+}
+
+/*	Ad Removal */
+.ad-bottom,
+.ad-left {
+    visibility: hidden !important;
+}
+/*	CROSSHAIR */
+.crosshair-static {
+    visibility: visible !important;
+    position: absolute;
+    display:flex !important;
+}
+    
+/* Animation */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #dd59a2f2, 0 0 5px #dd59a2f2, 0 0 5px #dd59a2f2, 0 0 5px #dd59a2f2, 0 0 6px #dd59a2f2, 0 0 7px #dd59a2f2, 0 0 8px #dd59a2f2;
+    }
+}
+
+@-webkit-keyframes animate{
+    to {transform:translateY(30%);}
+}
+
+.heads .clan-tag {
+	color: #dd59a2f2;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+    visibility: visible;
+}
+
+/* Background */
+.interface .nickname:after {
+    content: url() !important;
+    margin-top: -2%;
+  }
+ .interface .nickname:before {
+    content: url() !important;
+    margin-top: -2%;
+  }
+    
+.pattern-bg,
+.bg-radial {
+    display: none;
+}
+
+.interface .background{
+    background: url(https://images-ext-1.discordapp.net/external/8yWOnptxqo2PPY6bEJrptyzV0HWyLB2vuWcLoF7Xib4/%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3DrfFmE142uWnkUF5h7sDu9zhzJJFDjP3yqF8KwxtKh60%3D/https/media.istockphoto.com/id/1180184210/photo/sky-cloud-pink-love-sweet-love-color-tone-for-wedding-card-background.jpg) repeat !important;
+    background-size: cover !important;
+}
+
+.end-modal {
+    background: url(https://images-ext-1.discordapp.net/external/8yWOnptxqo2PPY6bEJrptyzV0HWyLB2vuWcLoF7Xib4/%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3DrfFmE142uWnkUF5h7sDu9zhzJJFDjP3yqF8KwxtKh60%3D/https/media.istockphoto.com/id/1180184210/photo/sky-cloud-pink-love-sweet-love-color-tone-for-wedding-card-background.jpg) repeat !important;
+        background-size: cover !important;
+
+}
+
+
+/* Loading Scene*/
+.loading-scene .progress {
+    background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+    background: linear-gradient(to right, #dd59a2f2, #dd59a2f2) !important;
+}
+
+.loading-scene .name .label {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.loading-scene .players .level {
+    color: #dd59a2f2;
+}
+
+/* Join URL Button (For client only) */
+.join-using-link {
+    background: #dd59a2f2 !important;
+    border-radius: 0 !important;
+    border: 4px solid #dd59a266 !important;
+}
+
+.join-using-link:active {
+    background: #dd59a2f2 !important;
+}
+
+#clientJoinButton {
+	background: #dd59a2f2 !important;
+    border-radius: 0 !important;
+    border: 4px solid #ffffff1c !important;
+}
+
+#clientJoinButton:active {
+    background: #dd59a2f2!important;
+}
+
+/* Stream 
+.live-streams {
+    background: rgba(55, 55, 55, .61);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    left: 95px;
+    top: 80px;
+    width: 300px !important;
+    height: 1200px;
+    border-left: 4px solid #ffffff1c;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.live-streams:before {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/947364113770758194/pngfind.com-chevron-png-95287.png?width=30&height=30);
+    position: fixed;
+    right: 320px;
+    top: 15px;
+    transition: 0.2s;
+}
+
+.live-streams:hover:before {
+    opacity: 0;
+}
+
+.live-streams:after {
+    content: "CSS by NizzQ#9235";
+    position: fixed;
+    top: 505px;
+    right: 115px;
+}
+
+.live-streams:hover {
+    left: -115px;
+}
+
+.live-streams .head {
+    display: none;
+}
+
+.live-streams .list {
+    width: 180px;
+    padding: 0 9px;
+    overflow: visible;
+}
+*/
+    
+/* Login/Signup*/
+.auth-form {
+    margin-left: 0 !important;
+    background: none !important;
+    backdrop-filter: none;
+    border: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    border-radius: 0 !important;
+    width: 2500px !important;
+    height: 118px !important;
+}
+
+.auth-form .btns button {
+    transform: none !important;
+    padding: 0px;
+	left: -450%;
+}
+
+.auth-user .loading {
+    background: #ffffff1c;
+	backdrop-filter: blur(5px);
+	border: none;
+	border-bottom: 5px solid #ffffff1c !important;
+	border-radius: 0;
+	width: 2500px;
+    height: 118px !important;
+}
+
+.auth-user .loader-container {
+	margin-right: 95% !important;
+}
+
+.button {
+    -webkit-text-stroke: 0px !important;
+}
+
+.auth-form .btns button:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.auth-form button,
+.auth-form button .border-top,
+.auth-form button .border-bottom{
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.auth-form button .triangle {
+    display: none;
+}
+
+.auth-form .text {
+    font-size: 26px !important;
+}
+
+.auth-form button:hover {
+    color: #dd59a2f2;
+}
+
+.button:after {
+    border: none;
+}
+
+    /* up bar */
+    
+       .left-interface .profile {
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
+        width: 2500px;
+        border-bottom: 5px solid rgba(0, 0, 0, 0);
+    }
+
+    .left-interface .progress-label {
+        display: none;
+    }
+
+    .left-interface .progress-lvl {
+        margin-bottom: 20px;
+    }
+
+    .left-interface .progress-line {
+        background: #dd59a2f2 !important;
+        height: 17px;
+    }
+
+    .left-interface .progress {
+        background: -webkit-gradient(linear, left top, right top, from(#f1aad8), to(#f1aad8)) !important;
+        background: linear-gradient(to right, #f1aad8, #f1aad8) !important;
+    }
+
+    .left-interface .level {
+        color: #f1aad8;
+    }
+
+    .left-interface .avatar-info,
+    .left-interface .user-info,
+    .left-interface .money {
+        background: #dd59a266 !important;
+        margin-left: -18px;
+        border: none;
+    }
+
+    .left-interface .avatar-info:hover,
+    .left-interface .user-info:hover {
+        background: #dd59a266;
+    }
+
+
+/* Left icons */
+    
+        .left-icons {
+        background: rgba(0, 0, 0, 0) !important;
+        backdrop-filter: blur(0px);
+        left: 0 !important;
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-radius: 0 !important;
+    }
+
+    .left-icons .icon-btn {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        width: 107px;
+        border-radius: 0;
+    }
+
+    .left-icons .icon-btn .text-icon,
+    .left-icons .icon-btn svg {
+        display: none;
+    }
+
+
+.left-icons .icon-btn:nth-child(1) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946791854823862342/clipart3359599.png?width=676&height=676);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(1):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946791854823862342/clipart3359599.png?width=676&height=676);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+.left-icons .icon-btn:nth-child(1):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946791854823862342/clipart3359599.png?width=676&height=676);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(2) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946792665842843659/Daco_4606909.png);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(2):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946792665842843659/Daco_4606909.png);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(3) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946793692327452762/527-5276041_server-png-images-server-icon-free-download-server.png);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(3):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946793692327452762/527-5276041_server-png-images-server-icon-free-download-server.png);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(4) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/994487960605040680/white2.png);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(4):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/994487960605040680/white2.png);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(5) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/966953628747321354/SeekPng.png?width=740&height=657);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(5):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/966953628747321354/SeekPng.png?width=740&height=657);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(6) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/994489599978110977/inventory.png);
+        background-size: 65px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.2rem !important;
+        background-position-y: 0.5rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(6):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/994489599978110977/inventory.png);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+    .left-icons .icon-btn:nth-child(7) {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946794301529137253/Daco_4390267.png?width=656&height=657);
+        background-size: 55px !important;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 1.5rem !important;
+        background-position-y: 0.1rem !important;
+        transition: 0.3s;
+    }
+
+    .left-icons .icon-btn:nth-child(7):hover {
+        background: url(https://media.discordapp.net/attachments/523517791886770188/946794301529137253/Daco_4390267.png?width=656&height=657);
+        background-repeat: no-repeat;
+        transform: scale(1.2)
+    }
+
+.coin-icon {
+    padding-right: 7px !important;
+
+}
+
+/* Right Interface */
+.right-interface .setting {
+	padding-top: 900px;
+}
+
+.right-interface .setting {
+	padding-right: 400px;
+}
+    
+.soc-group:nth-child(1),
+.soc-group:nth-child(2) {
+	background: rgba(0, 0, 0, 0) !important;
+	border: none;
+    visibility: hidden;
+}
+
+.soc-group:nth-child(1):hover,
+.soc-group:nth-child(2):hover {
+	background: none !important;
+	transform: scale(1.5);
+    visibility: hidden;
+}
+
+.right-interface .settings {
+	background: #dd59a266;
+	border: none;
+	width: 20px !important;
+	transition: 0.3s;
+    z-index: 2;
+} 
+
+.right-interface .settings:hover {
+	background: none;
+	transform: scale(1.5);
+}
+
+.right-interface {
+    z-index: 999 !important;
+}
+/*
+.soc-group:nth-child(2) {
+    background: url(https://media.discordapp.net/attachments/523517791886770188/947500791365787729/monitor-512.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50px !important;
+    background-position-x: 1rem !important;
+    background-position-y: 1rem !important;
+	border: none;
+    position: fixed;
+    right: 80px;
+    top: 12px;
+}
+
+.soc-group:nth-child(2):hover {
+    background: url(https://media.discordapp.net/attachments/523517791886770188/947500791365787729/monitor-512.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50px !important;
+    background-position-x: 1rem !important;
+    background-position-y: 1rem !important;
+    transform: scale(1.2);
+}
+
+.soc-group:nth-child(2) svg {
+    opacity: 0;
+}
+*/
+
+    /* play btn */
+    #play-btn {
+        background: #dd59a266 !important;
+        left: -200px;
+        width: 310px;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    #play-btn:hover {
+        background: #dd59a2f2 !important;
+    }
+
+    #play-btn .border-top,
+    #play-btn .border-bottom {
+        background: none !important;
+    }
+
+/* Daily Quest */
+#dailyQuests {
+    position: fixed;
+    top: 90px;
+	background: #dd59a266;
+    border: none;
+	border-radius: 30px;
+	z-index: -1 !important;
+	overflow: auto;
+}
+
+.quest {
+	background: transparent !important;
+}
+
+#dailyQuests .tip {
+	background: rgba(0, 0, 0, 0) !important;
+	border-radius: 0 !important;
+	margin-left: 15px;
+}
+
+.quest .progress-line {
+	background: #dd59a266;
+}
+
+#dailyQuests .reward {
+	background: #dd59a266;
+}
+
+.quest .amount {
+	color: #dd59a2f2;
+}
+
+.quest .progress2 {
+	color: #dd59a2f2;
+}
+
+.quest .progress-line .progress {
+	background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+    background: linear-gradient(to right, #dd59a2f2, #dd59a2f2) !important;
+}
+
+/* Container */
+.container {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.container-card {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.loader  {
+	background: transparent !important;
+	border: none !important;
+}
+
+.background {
+    background: transparent !important;
+    border-radius: 0;
+}
+
+.tabs {
+    background: rgba(0, 0, 0, 0) !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-right: none !important;
+}
+
+.tab {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.tab:hover,
+.nav:hover {
+	color: #1e1e1e !important;
+}
+
+.tab.active {
+	color: #ffffff;
+	border-bottom: 3px solid #ffffff;
+}
+
+.active-tab {
+	color: #ffffff !important;
+	border-bottom: 3px solid #ffffff;
+}
+
+.nav.active {
+	color: #ffffff;
+}
+
+.head-text {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.add-friends,
+.top-items {
+    background: transparent !important;
+}
+
+.limit {
+    border-left: none !important;
+}
+
+.close,
+.home,
+.name-page,
+.select-mods-cont hr,
+.info-icon,
+.container button .border-top,
+.container button .border-bottom {
+    display: none !important;
+}
+
+.reset-time,
+.info-awards,
+.news {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+}
+
+.settings .box {
+    background: #dd59a266;
+    border: none;
+}
+
+    .select-mods-cont {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important;
+    overflow: visible;
+	z-index: 999 !important;
+    width: 400px !important;
+    height: 770px !important;
+    left: -400px !important;
+    top: -470px !important;
+}
+    
+    .card-cont settings card-1 {top: -100px}
+
+    .settings {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;  
+}
+    
+    .info-key-cont-enter{display:none}
+    
+    .select-mods-maps {
+    position:absolute; left:0px; top:180px;
+}
+    
+.interface.text-2 > .play > div > .play-content-up > div > div > .select-mods-maps {
+    display: grid;
+    text-align: left;
+    padding: 0 0px;
+    width: 100% !important;
+    height: 75% !important;
+}
+
+.select-regions-cont {
+    border: 1px solid #dd59a2f2 !important;
+    border-radius: 5px !important;
+    background: #dd59a266 !important
+
+}
+
+    .select-regions-cont[data-v-3613f89e] {height: 165px; width: 130px; position: fixed; left: 25%; top: -30%;}
+
+.container button {
+    background: #dd59a2f2 !important;
+    border-radius: 0 !important;
+    transform: none !important;
+}
+
+.container button {
+    background: #dd59a2f2 !important;
+    border-radius: 0 !important;
+    transform: none !important;
+}
+
+.container button .border-top,
+.container button .border-bottom {
+    display: none;
+}
+
+.text {
+    transform: none !important;
+}
+
+.settings .header,
+.vm--container .cont .head {
+	color: white !important;
+}
+
+.settings .label {
+	color: #87898c ;
+}
+
+.select-regions-regions .region:nth-child(1) span,
+.select-regions-regions .region:nth-child(2) span,
+.select-regions-regions .region:nth-child(3) span,
+.select-mods-mods .mod:nth-child(1) span,
+.select-mods-mods .mod:nth-child(2) span {
+	visibility: hidden;
+}
+
+.select-regions-regions .region:nth-child(1) span:before,
+.select-regions-regions .region:nth-child(2) span:before,
+.select-regions-regions .region:nth-child(3) span:before,
+.select-mods-mods .mod:nth-child(1) span:before,
+.select-mods-mods .mod:nth-child(2) span:before {
+	visibility: visible;
+}
+
+.select-regions-regions .region:nth-child(1) span:after{
+	visibility: visible;
+	content: "NA";
+	margin-left: -130px;
+}
+
+.select-regions-regions .region:nth-child(2) span:after{
+	visibility: visible;
+	content: "EU";
+	margin-left: -60px;
+}
+
+.select-regions-regions .region:nth-child(3) span:after{
+	visibility: visible;
+	content: "SEA";
+	margin-left: -32px;
+}
+
+.select-mods-mods .mod:nth-child(1) span:after{
+	visibility: visible;
+	content: "FFA";
+	margin-left: -40px;
+}
+
+.select-mods-mods .mod:nth-child(2) span:after{
+	visibility: visible;
+	content: "TDM";
+	margin-left: -47px;
+}
+
+    /* Profile */
+    .profile .statistics,
+    .profile .progress,
+    .profile .k-d,
+    .card-profile {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .profile .you {
+        visibility: hidden;
+    }
+
+    .profile .progress-line {
+        background: #f1aad8;
+    }
+
+    .profile .progress-level-value,
+    .stat-name {
+        color: #f1aad8 !important;
+    }
+
+    .profile .progress {
+        background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+        background: linear-gradient(to right, #dd59a2f2, #dd59a2f2) !important;
+    }
+
+    .heads .levels {
+        display: none;
+        color: #dd59a2f2;
+    }
+
+    .stat-value {
+        color: #dd59a2f2 !important;
+    }
+
+    .news img {
+        border-radius: 0 !important;
+    }
+
+    .news .info {
+        background: #dd59a266 !important;
+    }
+
+    .news .info-content {
+        background: #dd59a266 !important;
+    }
+
+    .info h1 {
+        background: #dd59a266 !important;
+    }
+
+    .changelog-item {
+        background: #dd59a266 !important;
+        border: none !important;
+    }
+
+/* Inventory */
+.tab-bar,
+.subject,
+.inventory .avatar {
+    background: #dd59a266 !important;
+}
+
+.subjects,
+.gun {
+    background: #dd59a266 !important;
+    border: none !important;
+}
+
+.inventory .avatar-head {
+    display: none;
+}
+
+.inventory .bottom {
+    background: #dd59a266 !important;
+    backdrop-filter: blur(2px) !important;
+    background-image: linear-gradient(to left, #dd59a266, #dd59a266) !important;
+}
+
+/* Play Content */
+.play-content .select-region,
+.play-content .select-mod {
+    background: #dd59a266;
+    border-radius: 20px;
+    border: 2px solid #dd59a2f2;
+}
+
+.play-content .select-region:hover {
+    background: #dd59a2f2;
+    backdrop-filter: blur(5px);
+}
+
+.play-content .select-mod:hover {
+    background: #dd59a2f2;
+}
+
+
+.triangle {
+    display: none !important;
+}
+
+/* Leaderboard */
+.leaders .clan-tag {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.lvl-leader {
+    color: #dd59a2f2 !important;
+}
+
+.list-cont,
+.list-champions,
+.top-items .items .item,
+.bottom-items .item,
+.leaderboard-cont .items {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+}
+
+.list-players .top-items {
+    box-shadow: none !important;
+}
+
+/* Clan */
+.clans,
+.clans .items .item,
+.my-clan .list-container .list .item .item-content {
+    background: #dd59a266 !important;
+}
+
+.my-clan .card-cont,
+.my-clan .list-container,
+.champions-list {
+    background: #dd59a2f2 !important;
+    box-shadow: none !important;
+}
+
+.my-clan .card-cont .name {
+	color: #f1aad8;
+	-webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.my-clan .champions-league,
+.my-clan .champions-scores,
+.my-clan .all-scores-label {
+	color: #f1aad8 !important;
+}
+
+.my-clan .champions-values,
+.my-clan .all-scores-value,
+.my-clan .description {
+	color: #f1aad8;
+}
+
+/* Market */
+.bottom-subj .count {
+    background: transparent;
+}
+
+/* Esc Interface*/
+.esc-interface {
+    backdrop-filter: blur(15px);
+}
+
+.esc-interface .head-right button,
+.esc-interface .head-right button .border-top,
+.esc-interface .head-right button .border-bottom {
+    background: #dd59a266 !important;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.esc-interface .head-right button:hover {
+    background: #dd59a266 !important;
+    border-bottom: 5px solid #dd59a2f2;
+}
+
+.esc-interface .left-container .player {
+    background: #dd59a2f2;
+    background-image: linear-gradient(to left, #dd59a2f2, #dd59a2f2) !important;
+}
+
+.esc-interface .right-container {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.esc-interface .player .label {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.esc-interface .primary {
+	color: #dd59a266 !important;
+}
+
+.esc-interface .level{
+	color: #dd59a2f2;
+}
+
+.esc-interface .continue {
+	background: #dd59a266 !important;
+	box-shadow: none !important;
+}
+
+.esc-interface .continue:hover{
+	background: #dd59a266 !important;
+	border-bottom: 7px solid #dd59a266;
+}
+
+.continue .border-top,
+.continue .border-bottom {
+	background: rgba(0, 0, 0, 0) !important;
+	box-shadow: none !important;
+}
+
+/* HUD */
+.mini-map-cont .name,
+.desktop-game-interface .info-key-cont,
+.list-weapons,
+.hp-title,
+.mWwn,
+.instruction {
+    display: none !important;
+}
+
+.cont-hp {
+    background: transparent !important;
+}
+
+.hp {
+    margin-right: 20%;
+}
+
+.hp-progress {
+    background: #dd59a2f2 !important;
+}
+
+.desktop-game-interface .state {
+    position: fixed;
+    width: 500px !important;
+    top: 93%;
+    left: 37% !important;
+}
+
+.cont-endurance {
+    margin-left: 1.5%;
+    background: #dd59a266 !important;
+    border: #dd59a2f2;
+}
+
+.endurance-progress {
+	background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+    background: linear-gradient(to right, #dd59a2f2, #dd59a2f2) !important;
+}
+
+.weapons-cont {
+    position: fixed;
+    width: 300px;
+    top: 95%;
+    left: 5%;
+    margin-top: -100px;
+    margin-left: 252px ;
+}
+
+.ammunition {
+    display: inline-block;
+    position: fixed;
+    left: calc(37% + 188px);
+  }
+
+.kill-death {
+    margin-top: 60px;
+    margin-left: 2px;
+}
+
+.kill-death .kill,
+.kill-death .death {
+    background: transparent;
+    box-shadow: none;
+}
+
+.state-cont .timer {
+    position: fixed;
+    top: 18px;
+    background: #dd59a2f2 !important;
+    box-shadow: none !important;
+    font-size: 50px;
+}
+
+/* In Game Leaderboard */
+.tab-info {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border: 5px solid #dd59a2f2;
+    }
+    
+    .tab-info .head {
+    display: none;
+    }
+    
+    .tab-info .player {
+    background: transparent !important;	
+    }
+    
+    .tab-info .primary {
+    color: #dd59a2f2 !important;
+    }
+    
+    .tab-info .nickname,
+    .tab-info .player-right {
+    color: #dd59a2f2;
+    }
+    
+    .tab-info .list {
+    color: white;
+    margin: 0 !important;
+    }
+    
+    .tab-info .list .list-value:nth-child(1),
+    .tab-info .list .list-value:nth-child(2),
+    .tab-info .list .list-value:nth-child(3) {
+    visibility: hidden;
+    }
+    
+    .tab-info .list .list-value:nth-child(1):after {
+    visibility: visible;
+    content: "K";
+    margin-left: -36px;
+    }
+    
+    .tab-info .list .list-value:nth-child(2):after {
+    visibility: visible;
+    content: "D";
+    margin-left: -36px;
+    }
+    
+    .tab-info .list .list-value:nth-child(3):after {
+    visibility: visible;
+    content: "S";
+    margin-left: -49px;
+    }
+
+    .achive-cont{
+        content: url(https://cdn.discordapp.com/attachments/953402413795119164/954837235868532816/icons8-satellite-lunare-96.png) !important;
+        position: absolute !important;
+        right: 46% !important;
+        width:10em; 
+        height:10em;
+        }
+
+.kill-bar-item {
+	background: #dd59a266 !important;
+	border: 3px solid #dd59a2f2;
+}
+
+.kill-bar-item .name {
+	color: #f1aad8;
+}
+
+.kill-bar-item .name-kill {
+	color: #f1aad8;
+}
+
+/* Chat */
+
+.desktop-game-interface #WMNn {
+    transform: scale(0);
+    transition-duration: 0.25s !important;
+}
+
+.desktop-game-interface #WMNn:focus {
+    transform: scale(1);
+}
+
+/*  chat thing */  
+.chat {
+    margin-bottom: -53px;
+    border-radius: 5px;
+}
+
+.chat .input-wrapper {
+    top: 400px !important;
+    width: 104%;
+    height: 15px;
+}
+
+
+.chat .name {
+    color: #f1aad8;
+}
+
+.message{
+    color: #f1aad8 !important;
+}
+
+.message .lvl {
+    color: #dd59a2f2;
+} 
+   
+/* End Screen */
+.end-modal .bottom {
+    display: none;
+}
+
+.end-modal .progress-line {
+    background: #dd59a2f2;
+}
+
+.end-modal .progress {
+    background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+    background: linear-gradient(to right, #dd59a2f2, #dd59a2f2) !important;
+}
+
+.end-modal .team-list-players .card-cont:nth-child(1),
+.end-modal .team-list-players .card-cont:nth-child(2),
+.end-modal .items {
+    background: #dd59a266 !important;
+    box-shadow: none !important;
+}
+
+.end-modal .team-list-players .label {
+    background: rgb(68, 68, 68);
+}
+
+.end-modal .label-text,
+.end-modal .points,
+.end-modal .lvl-leader {
+    color: #dd59a2f2;
+}
+
+.end-modal .chat {
+    margin-bottom: -53px;
+    border-radius: 5px;
+}
+
+.end-modal .chat .input-wrapper {
+    top: 400px !important;
+    width: 103%;
+    height: 130px;
+}
+
+.end-modal #WMNn {
+    width: 310px;
+    margin-left: 20px;
+}
+
+.end-modal .team-list-players .list .player {
+    background: #dd59a266;
+}
+
+.end-modal .clan-tag {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Reward Container */
+.progress,
+.lvl,
+.progress-helper {
+    background: -webkit-gradient(linear, left top, right top, from(#dd59a2f2), to(#dd59a2f2)) !important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
+.buy-btn {
+	display: none !important;
+}
+
+.level-head {
+    display: none !important;
+    color: #dd59a2f2;
+}
+
+.decor-bg {
+	display: none;
+}
+
+/* Inputs */
+.private-btn > span {
+	content: url(https://media.discordapp.net/attachments/523517791886770188/953239076457316382/openlock.png);
+	position: fixed;
+	left: 25px;
+	width: 40px;
+}
+
+.private-btn > input:checked + span {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/953239093955948544/lock.png);
+}
+
+.custom-checkbox > span:before {
+    border-radius: 50px;
+    background-color: #dd59a2f2;
+    border: none;
+}
+
+.custom-checkbox > input:checked + span:before {
+    background-color: #dd59a2f2;
+}
+
+input {
+    background: #f1aad8 !important;
+    color: #dd59a266 !important;
+    border-radius: 10px !important;
+}
+
+.selected {
+    background: #dd59a2f2;
+}
+
+.items {
+    background: #dd59a2f2 !important;
+    box-shadow: none !important;
+}
+
+.settings .input {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.copy button {
+	background: #dd59a2f2 !important;
+	box-shadow: none !important;
+}
+
+.copy .border {
+	display: none;
+}

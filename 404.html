@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Arena // 404</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --base-clr: #000000;
+            --line-clr: #42434a;
+            --hover-clr: #222533;
+            --text-clr: #ffffff;
+            --accent-clr: #415bab;
+            --secondary-text-clr: #b0b3c1;
+            --error-clr: #ff0000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: 'Comic Sans MS';
+            line-height: 1.5rem;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: 100dvh;
+            background-color: var(--base-clr);
+            color: var(--text-clr);
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--line-clr);
+            padding: 1rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: spin 10s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .error-code {
+            font-size: 10rem;
+            color: var(--error-clr);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .dancing-cat {
+            width: 150px;
+            height: 150px;
+            background: url('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif') no-repeat center/cover;
+            animation: dance 1s infinite alternate;
+        }
+
+        @keyframes dance {
+            0% {
+                transform: rotate(-10deg);
+            }
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+        footer {
+            background-color: var(--line-clr);
+            padding: 1rem;
+            font-size: 0.8rem;
+        }
+
+        a {
+            color: var(--accent-clr);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--hover-clr);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Oops! Something went terribly wrong...</h1>
+    </header>
+    <main>
+        <div class="error-code">404</div>
+        <p class="error-message">The page you are looking for has vanished into the void of the internet.</p>
+        <div class="dancing-cat"></div>
+        <p><a href="index.html">Click here to escape this madness</a></p>
+    </main>
+    <footer>
+        <p>This error page is brought to you by chaos and confusion.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+/*
+	@name - Illuminate the night
+	@description - The night arrives..
+
+	- About the creator -
+	@discorduser - e_nwa
+	@kirkaid - #09EVRK
+
+	@README - if you repost this css, please give credit :)
+*/
+
+:root{
+	--glow-prim: hsl(235, 40%, 45%);
+	--glow-seco: hsl(235, 40%, 60%);
+	
+	--icon-shadow: hsl(235, 40%, 50%);
+	--visibleitems: 1;
+}
+
+@keyframes glow{
+	0%  {border-color: var(--glow-prim);}
+	50% {border-color: var(--glow-seco);}
+	100% {border-color: var(--glow-prim);}
+}
+
+#app[data-v-7118ad40]:has(.interface[data-v-20b10913]){
+	content: '';
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://wallpaperaccess.com/full/880901.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.interface[data-v-20b10913]{
+	position: absolute;
+	display: flex;
+	width: 95%;
+	height: 95%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: hsl(0, 0%, 0%, .75);
+	backdrop-filter: blur(7px);
+	border-radius: 15px;
+	box-shadow: 0px 0px 7px -3px hsl(0, 0%, 75%);
+	z-index: 1;
+}
+
+.background[data-v-20b10913]{ display: none; }
+
+.left-icons[data-v-20b10913]{
+	display: grid !important;
+	grid-template-rows: repeat(7, 1fr);
+    transition: height .5s;
+	background: hsla(235, 35%, 45%, .25);
+	height: calc(100% - 15%) !important;
+}
+
+.left-icons[data-v-20b10913]:hover{ transition: height .125s ease-in; }
+
+.left-icons[data-v-20b10913]:not(:hover){
+	grid-template-rows: 1fr;
+    height: 5vh !important;
+	min-height: calc(50px * var(--visibleitems));
+	overflow: hidden;
+}
+
+/* discontinued this for now until i gain more insperation
+.left-icons[data-v-20b10913]::before{
+	content: 'hover me';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	height: 100%;
+	width: 100%;
+	background: inherit;
+	border: inherit;
+	transition: opacity .175s 5s;
+	opacity: 1;
+} */
+
+.left-icons[data-v-20b10913]:hover::before{
+	opacity: 0;
+	display: none;
+}
+
+.left-icons[data-v-20b10913]:hover > .icon-btn{ opacity: 1; }
+
+.icon-btn{
+	width: 100%;
+	height: 100%;
+}
+
+.left-icons[data-v-20b10913] > .icon-btn{
+	background: none;
+	border: none;
+    transition: 
+		opacity .25s ease-in .125s,
+		border-color .125s,
+		box-shadow .075s,
+		background .175s;
+	opacity: 0;
+	padding: 0;
+}
+
+.left-icons[data-v-20b10913] > .icon-btn:first-child{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.left-icons[data-v-20b10913] > .icon-btn:last-child{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.left-icons[data-v-20b10913] > .icon-btn:hover{
+	background: hsla(235, 75%, 10%, .75);
+	border: solid 3px;
+	box-shadow: 0px 0px 10px 0px var(--icon-shadow);
+	z-index: 1;
+	animation-name: glow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+/*change the position of left icons*/
+
+.SERVERS { 
+	grid-row: 1;
+	opacity: 1 !important;
+}
+
+.HUB { grid-row: 2; }
+.STORE { grid-row: 3; }
+.QUESTS { grid-row: 4; }
+.FRIENDS { grid-row: 5; }
+.INVENTORY { grid-row: 6; }
+.MAP { grid-row: 7; }
+
+
+
+.left-icons[data-v-20b10913] .wrapper{
+	transition: none;
+	transform: none !important;
+}
+
+.icon-btn[data-v-323a31a5] .text-icon{
+	visibility: hidden
+}
+
+.left-icons[data-v-20b10913] > .icon-btn:hover .text-icon{
+	visibility: visible;
+}

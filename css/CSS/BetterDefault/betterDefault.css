@@ -1,0 +1,193 @@
+@import url('https://drift.daymian.xyz/assets/font/font.css');
+
+:root {
+    --logo: url("https://client.kirka.io/images/icon.png");
+}
+
+*{
+    font-family: 'forza' !important;
+    border-radius: 0px !important;
+}
+
+.esc-interface{
+    background: rgba(255,255,255,0) !important;
+}
+
+#fps, #ping{
+    color: red;
+}
+.left-container .player-cont {
+    
+}
+.chat-position {
+    margin-top: 5vh !important;
+}
+
+
+.instruction {
+    display: none !important;
+}
+
+.state-cont{
+    justify-content: center !important;
+}
+
+.messages{
+/*     height: 10vh !important; */
+    min-height: none !important;
+}
+
+
+#state-cont {
+    position: fixed;
+    left: 50vw;
+    bottom: 1em;
+    transform: translateX(-50%);
+}
+
+.state-weapon-active.text-1 {
+    position: fixed;
+    left: -35.31vw;
+    bottom: 5rem;
+    transform: none;
+    font-size: 8px;
+}
+
+.list-weapons > .weapon-cont > .weapon-name {
+    display: none;
+}
+
+.list-weapons > .weapon-cont > .bottom:not(.is-selected) {
+    display: none;
+}
+
+.list-weapons > .weapon-cont > .bottom > img {
+    position: fixed;
+    right: 38.31vw;
+    top: 24rem;
+    transform: none;
+    font-size: 8px;
+}
+
+.chat-position {
+    bottom: 1rem !important;
+    left: 1rem !important;
+    transform-origin: bottom left !important;
+    transform: scale(0.9) !important;
+
+}
+.mini-map-cont,
+.desktop-game-interface .info-key-cont,
+/* .list-weapons, */
+.mWwn,
+.instruction {
+    display: none !important;
+}
+
+#bottom-left{
+    height: 250px
+}
+
+.PARANORMAL{
+    background: black !important;
+    border: white 1px solid !important;
+        margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.MYTHICAL{
+    background: #d70000 !important;
+    border: red 1px solid !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.LEGENDARY{
+    background: #eca500 !important;
+    border: yellow 1px solid !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.EPIC{
+    background: #a22dff !important;
+    border: blueviolet 1px solid !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.RARE{
+    background: #44b6e3 !important;
+    border: cyan 1px solid !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.COMMON{
+    background: #65d58b !important;
+    border: lime 1px solid !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+.weapons .mWwn,
+.interface .logo {
+    content: var(--logo) !important;
+    width: 10rem;
+    height: auto !important;
+}
+
+.hover-btns-group {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 5px !important;
+  width: 100% !important;
+}
+.play-btn {
+    transform: skew (360deg) !important;
+}
+
+.hover-btns-group .button {
+  width: 100% !important;
+}
+
+.tab-bar .tab,
+.title{
+    transform: skew(360deg) !important;
+}
+
+.play-btn .border-top,
+.play-btn .border-bottom {
+    background: #ffb914 !important;
+}
+
+.create-btn .border-top,
+.create-btn .border-bottom{
+    background: #2f80ed !important;
+}
+
+.join-btn .border-top,
+.join-btn .border-bottom{
+    background: #2f80ed !important;
+}
+.select-region {
+    width: 94%;
+    text-align: center !important
+}
+.left-container .player-list {
+    
+}
+.left-container .player-cont {
+    display:flex !important;
+    justify-content: flex-start !important;
+    align-content: flex-start !important;
+    flex-direction: column !important;
+  width: 70% !important;  
+}
+
+.ammunition{
+      position: fixed;
+  top: 15%;
+  left: -10em;
+font-size: 7em !important;
+}

@@ -1,0 +1,178 @@
+/* made this css in under 5 hours, might be bad */
+
+/* Kill/assist/point */
+.kill-bar-cont>.kill-bar-item {
+	background: var(--background-clr-secondary-4);
+	border-radius: 0.15rem;
+	padding: 0.5rem;
+}
+
+.ach-cont {
+	top: 0 !important;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ach-cont>.animate-cont {
+	transform: none !important;
+	width: auto;
+	height: auto;
+}
+
+.animate-cont>svg {
+	display: none;
+}
+
+.animate-cont>.text {
+	font-size: 1rem !important;
+	font-weight: 700 !important;
+	margin: unset !important;
+	margin-left: 15rem !important;
+}
+
+.animate-cont>.text>span>span {
+	color: white !important;
+}
+
+#app > div.interface.text-2 > div.background {
+    background-image: url("https://i.imgur.com/fKya0IZ.png") !important;
+    background-size: cover !important;
+}
+#app > div.interface.text-2 > div.background > div.pattern-bg,
+#app > div.interface.text-2 > div.background > div.bg-radial {
+    display: none !important
+}
+
+/*End screen background*/
+.end-modal {
+    background: url("https://www.shutterstock.com/shutterstock/videos/1085816414/thumb/1.jpg?ip=x480") repeat !important;
+    z-index: -1; 
+    background-size: cover !important;
+}
+
+.end-modal .team-list-players .list .player {
+    background: rgba(255, 0, 0, .52) !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.end-modal .team-list-players .card-cont:nth-child(1),
+.end-modal .team-list-players .card-cont:nth-child(2),
+.end-modal .items {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.end-modal .team-list-players .label {
+    background: transparent;
+    color: var(--asscentColor);
+}
+
+/* background transparent */
+.box,
+.input,
+.settings,
+.quests,
+.quest,
+.tip,
+.amount,
+.reward,
+.progress-line,
+.card-cont,
+.container-card,
+.progress[data-v-49c6809c],
+.background,
+.container button .border-top,
+.container button .border-bottom,
+.messages.messages-cont.small,
+.title,
+.card-list,
+.head,
+.changelog-item,
+.card,
+.live-streams,
+.left,
+.cont {
+    background: transparent !important;
+    border: none !important;
+}
+
+.progress[data-v-0f7a25c2] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+
+}
+
+.active {
+    border-bottom: var(--asscentColor) solid 0.125rem !important;
+}
+
+/* Hide logo */
+.interface .logo {
+    display: none;
+}
+
+/* Dash and life bar */
+.endurance-progress {
+    background: #fff !important;
+}
+
+.hp-progress {
+  background: #0fffff !important;
+}
+
+/* Play button */
+#play-btn {
+border: 0px solid #808080;
+}
+
+#play-btn:hover {
+border: 4px solid #808080;
+}
+
+#play-btn {
+  background: none !important; /* Remove any existing background */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAA1BMVEWAgICQdD0xAAAAH0lEQVRoge3BgQAAAADDoPlTX+EAVQEAAAAAAAAA8BohbAABVJpSrwAAAABJRU5ErkJggg==') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#play-btn .border {
+  display: none;
+}
+
+/* Left icons in homescreen */
+.left-icons, .icon-btn {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.text-icon {
+    display: none !important;
+}
+
+.left-icons .icon-btn:hover {
+    border-top: transparent !important;
+}
+
+/*Top right buttons (discord and client button)*/
+.card-cont.soc-group {
+     display: none;
+}
+
+/* Lobby */
+#invite-btn.button.invite-btn.rectangle {
+     display: none;
+}
+
+/* Quest expire text */
+.expire {
+     display: none;
+}

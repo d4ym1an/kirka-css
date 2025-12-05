@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSArena // CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="app.js" defer></script>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+  <nav id="sidebar" class="close">
+    <ul>
+      <li>
+        <span class="logo">CSSArena</span>
+        <button onclick="toggleSidebar()" id="toggle-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+          </svg>
+        </button>
+      </li>
+      <li class="active">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+          </svg>
+          <span id="sidebarText">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="/css">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg>
+          <span id="sidebarText">CSS List</span>
+        </a>
+      </li>
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h207q16 0 30.5 6t25.5 17l57 57h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Zm400-160v40q0 17 11.5 28.5T600-320q17 0 28.5-11.5T640-360v-40h40q17 0 28.5-11.5T720-440q0-17-11.5-28.5T680-480h-40v-40q0-17-11.5-28.5T600-560q-17 0-28.5 11.5T560-520v40h-40q-17 0-28.5 11.5T480-440q0 17 11.5 28.5T520-400h40Z" />
+          </svg>
+          <span id="sidebarText">More Lists</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li>
+              <a href="https://kirkacommunityhub.netlify.app/css" id="sidebarText" target="_blank">
+                <img src="/imgs/kAssets.png" alt="Kirka Community Hub Icon"
+                  style="width: 16px; height: 16px; vertical-align: middle;">
+                <span>KCH CSS</span>
+              </a>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h207q16 0 30.5 6t25.5 17l57 57h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Zm400-160v40q0 17 11.5 28.5T600-320q17 0 28.5-11.5T640-360v-40h40q17 0 28.5-11.5T720-440q0-17-11.5-28.5T680-480h-40v-40q0-17-11.5-28.5T600-560q-17 0-28.5 11.5T560-520v40h-40q-17 0-28.5 11.5T480-440q0 17 11.5 28.5T520-400h40Z" />
+          </svg>
+          <span id="sidebarText">Tools n Stuff</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a href="https://kirka.lukeskywalk.com/" id="sidebarText">
+                <img src="/imgs/skywalk.png" width="16px" height="16px">
+                <span>Skywalk Kirka Tools</span>
+              </a></li>
+            <li><a href="/assets/index.html" id="sidebarText">
+                <img src="/imgs/kirka-logo.png" width="16px" height="16px">
+                <span>Kirka Assets</span>
+              </a></li>
+            <li class="dawn"><a href="https://github.com/zVipexx/dawn-client">
+                <img src="/imgs/dawn.png" width="16px" height="16px">
+                <span>Dawn Client</span>
+              </a></li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="https://forms.gle/9YpvtfGa8ZEnUkpL9" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-40q0-17 11.5-28.5T280-880q17 0 28.5 11.5T320-840v40h320v-40q0-17 11.5-28.5T680-880q17 0 28.5 11.5T720-840v40h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+          </svg>
+          <span>Upload</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <header>
+      <div class="headerText">
+        <div class="header">
+          <h1>Free Kirka CSS Files</h1>
+          <img src="/imgs/icon.png" alt="Kirka Icon" class="logo">
+        </div>
+        <p><strong>Feel free to fix any of the CSS and send it to me via Discord (@d4ym1an). Once tested, I will
+            compensate you with 10,000 coins.</strong></p>
+        <p>CSS being loaded into <a href="https://juice.irrvlo.xyz" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: underline;" class="juiceText">Juice Client</a></p>
+      </div>
+    </header>
+
+
+    <section class="search-bar">
+      <label for="search" class="visually-hidden"></label>
+      <input type="text" id="search" placeholder="Search CSS files..." onkeyup="filterCSS()"
+        aria-label="Search CSS files">
+    </section>
+
+    <section class="color-filter">
+      <label for="color-select">Filter</label>
+      <select id="color-select" onchange="filterByColor()" aria-label="Filter CSS files by color">
+        <option value="">All</option>
+        <option value="favorite">Favorites</option>
+        <option value="classic">Classic</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="pink">Pink</option>
+      </select>
+    </section>
+
+    <section id="css-files">
+      <div class="css-card" data-id="fivehours" data-filters="black, grey">
+        <img src="/css/CSS/5hours/image_2025-02-03_193406064.png" alt="5hours Preview" onclick="openCarousel(this)">
+        <h2>5hours</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/5hours/5hours.css" download="5hours.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="anime" data-filters="blue">
+        <img src="/css/CSS/anime/animelobby.png" alt="anime Preview" onclick="openCarousel(this)">
+        <h2>anime</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/anime/anime.css" download="anime.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="blue" data-filters="blue">
+        <img src="/css/CSS/Blue/bluelobby.png" alt="blue Preview" onclick="openCarousel(this)">
+        <h2>blue</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Blue/Blue.css" download="Blue.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="egirl" data-filters="pink,white">
+        <img src="/css/CSS/Egirl/egirllobby.png" alt="egirl Preview" onclick="openCarousel(this)">
+        <h2>egirl</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Egirl/egirl.css" download="egirl.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="green" data-filters="green,black">
+        <img src="/css/CSS/Green/image_2025-02-03_201945486.png" alt="Green Preview" onclick="openCarousel(this)">
+        <h2>Green</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Green/green.css" download="green.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="grey" data-filters="black">
+        <img src="/css/CSS/Grey/image_2025-02-03_201339055.png" alt="Grey Preview" onclick="openCarousel(this)">
+        <h2>Grey</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Grey/grey.css" download="grey.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="hover" data-filters="blue,classic">
+        <img src="/css/CSS/hover/image_2025-02-03_203642444.png" alt="hover Preview" onclick="openCarousel(this)">
+        <h2>hover</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/hover/hover.css" download="hover.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="japantown" data-filters="red,white,pink">
+        <img src="/css/CSS/Japan-Town/image_2025-02-03_193717030.png" alt="Japan Town Preview"
+          onclick="openCarousel(this)">
+        <h2>Japan Town</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Japan-Town/japan-town.css" download="japan-town.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="jett" data-filters="blue,black">
+        <img src="/css/CSS/Jett/image_2025-02-03_203940844.png" alt="jett Preview" onclick="openCarousel(this)">
+        <h2>jett</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Jett/jett.css" download="jett.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="pink" data-filters="pink white">
+        <img src="/css/CSS/pink/image_2025-02-03_204325675.png" alt="pink Preview" onclick="openCarousel(this)">
+        <h2>pink</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/pink/pink.css" download="pink.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="plink" data-filters="purple,blue,black">
+        <img src="/css/CSS/plink/image_2025-02-03_201459409.png" alt="plink Preview" onclick="openCarousel(this)">
+        <h2>plink</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/plink/plink.css" download="plink.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="uwu" data-filters="pink,white">
+        <img src="/css/CSS/UwU/image_2025-02-03_201655485.png" alt="UwU Preview" onclick="openCarousel(this)">
+        <h2>UwU</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/UwU/uwu.css" download="uwu.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="wolfey" data-filters="purple">
+        <img src="/css/CSS/Wolfey/image_2025-02-03_204500385.png" alt="Wolfey Preview" onclick="openCarousel(this)">
+        <h2>Wolfey</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Wolfey/Wolfey.css" download="Wolfey.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="zenith" data-filters="black,white">
+        <img src="/css/CSS/Zenith/image_2025-02-03_201151720.png" alt="Zenith Preview" onclick="openCarousel(this)">
+        <h2>Zenith</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/Zenith/Zenith.css" download="Zenith.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="blackandwhite" data-filters="black,white">
+        <img src="/css/CSS/blackandwhite/Screenshot 2025-04-01 185127.png" alt="Black & White Preview"
+          onclick="openCarousel(this)">
+        <h2>Black & White</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/blackandwhite/blackandwhite.css" download="blackandwhite.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="glaive" data-filters="blue,white,black">
+        <img src="/css/CSS/glaive/Screenshot 2025-04-01 185330.png" alt="glaive Preview" onclick="openCarousel(this)">
+        <h2>glaive</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/glaive/glaive.css" download="glaive.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="ayakaganyu" data-filters="red,white,pink">
+        <img src="/css/CSS/ayaka-and-ganyu/Screenshot 2025-04-13 221506.png" alt="ayaka & ganyu Preview"
+          onclick="openCarousel(this)">
+        <h2>ayaka & ganyu</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/ayaka-and-ganyu/ayaka-ganyu.css" download="ayaka-ganyu.css">Download</a>
+      </div>
+
+      <div class="css-card" data-id="enwa" data-filters="blue,classic">
+        <img src="/css/CSS/enwa/Screenshot 2025-04-13 221849.png" alt="enwa Preview" onclick="openCarousel(this)">
+        <h2>enwa</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/enwa/enwa.css" download="enwa.css">Download</a>
+      </div>
+      <div class="css-card" data-id="irrvlohween" data-filters="orange">
+        <img src="/css/CSS/hween2024irrvlo/Screenshot_2024-10-01_092835.png" alt="irrvlo hween Preview"
+          onclick="openCarousel(this)">
+        <h2>Irrvlo Hween 2024</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/hween2024irrvlo/hween2024irrvlo.css" download="hween2024irrvlo.css">Download</a>
+      </div>
+      <div class="css-card" data-id="sandynevermore" data-filters="orange yellow">
+        <img src="/css/CSS/sandyNevermore/menu.png" alt="sandyNevermore Preview"
+          onclick="openCarousel(this)">
+        <h2>Sandy Nevermore</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/sandyNevermore/sandynevermore.css" download="sandynevermore.css">Download</a>
+      </div>
+      <div class="css-card" data-id="flow" data-filters="orange black">
+        <img src="/css/CSS/flow/menu.png" alt="flow Preview"
+          onclick="openCarousel(this)">
+        <h2>flow</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/flow/flow.css" download="flow.css">Download</a>
+      </div>
+      <div class="css-card" data-id="BetterDefault" data-filters="orange yellow">
+        <img src="/css/CSS/BetterDefault/btrdHome.png" alt="BetterDefault Preview"
+          onclick="openCarousel(this)">
+        <h2>BetterDefault</h2>
+        <div class="buttons">
+          <button class="favorite" onclick="toggleFavorite(this)">
+            <img src="/favorite.svg" alt="Favorite">
+          </button>
+          <button onclick="viewCode(this)" class="code">
+            <img src="/code.svg" alt="View Code">
+          </button>
+          <button onclick="copyURL(this)" class="copy">
+            <img src="/copy.svg" alt="Copy URL">
+          </button>
+        </div>
+        <a href="/css/CSS/BetterDefault/BetterDefault.css" download="BetterDefault.css">Download</a>
+      </div>
+    </section>
+    <div id="popup-overlay" class="overlay-popup" style="display: none;">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <p>URL copied to clipboard!</p>
+      </div>
+    </div>
+    <!-- Image Carousel Modal -->
+    <div id="image-carousel-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeCarousel()">&times;</span>
+        <div class="carousel">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <div class="carousel-images">
+            <!-- Images will be dynamically inserted here -->
+          </div>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>I, Daymian, am not affiliated with Kirka (Kirka.io), nor were these CSS files created by other people. These
+        CSS files are either publicly available or have been provided to me for the purpose of uploading here.</p>
+      <p>If you recognize a CSS file here that you have created and would like to keep private, please contact me via
+        Discord (@d4ym1an) and provide proof of ownership.</p>
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+  <script src="/filter.js"></script>
+  <script src="/hover.js"></script>
+  <script src="/server.js"></script>
+  <script>
+    function toggleFavorite(button) {
+      const img = button.querySelector('img');
+      const card = button.closest('.css-card');
+      const cardId = card.querySelector('h2').textContent.trim();
+      const isFavorite = img.src.includes('favoriteFill.svg');
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+      if (isFavorite) {
+        img.src = '/favorite.svg';
+        card.dataset.filters = card.dataset.filters.replace(',favorite', '');
+        const index = favorites.indexOf(cardId);
+        if (index > -1) favorites.splice(index, 1);
+      } else {
+        img.src = '/favoriteFill.svg';
+        card.dataset.filters += ',favorite';
+        if (!favorites.includes(cardId)) favorites.push(cardId);
+      }
+
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+
+    function viewCode(button) {
+      const card = button.closest('.css-card');
+      const downloadLink = card.querySelector('a').href;
+      window.open(downloadLink, '_blank');
+    }
+
+    function copyURL(button) {
+      const card = button.closest('.css-card');
+      const downloadLink = card.querySelector('a').href;
+      navigator.clipboard.writeText(downloadLink).then(() => {
+        const popup = document.getElementById('popup-overlay');
+        popup.style.display = 'flex';
+      });
+    }
+
+    function closePopup() {
+      const popup = document.getElementById('popup-overlay');
+      popup.style.display = 'none';
+    }
+
+    function loadFavorites() {
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+      const cards = document.querySelectorAll('.css-card');
+
+      cards.forEach(card => {
+        const cardId = card.querySelector('h2').textContent.trim();
+        const img = card.querySelector('.favorite img');
+
+        if (favorites.includes(cardId)) {
+          img.src = '/favoriteFill.svg';
+          if (!card.dataset.filters.includes('favorite')) {
+            card.dataset.filters += ',favorite';
+          }
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadFavorites);
+  </script>
+  <script>
+    window.addEventListener('load', () => {
+      const loadingScreen = document.getElementById('loading-screen');
+      loadingScreen.style.display = 'none';
+    });
+  </script>
+  <script>
+    let currentSlideIndex = 0;
+
+    function openCarousel(imgElement) {
+      const card = imgElement.closest('.css-card');
+      const cardId = card.dataset.id;
+      const modal = document.getElementById('image-carousel-modal');
+      const carouselImages = modal.querySelector('.carousel-images');
+
+      // Clear previous images
+      carouselImages.innerHTML = '';
+
+      // Add images dynamically based on the card ID
+      const images = {
+        glaive: [
+          '/css/CSS/glaive/Screenshot 2025-04-01 185330.png',
+          '/css/CSS/glaive/Screenshot 2025-04-01 185539.png'
+        ],
+        fivehours: [
+          '/css/CSS/5hours/image_2025-02-03_193316431.png',
+          '/css/CSS/5hours/image_2025-02-03_193406064.png'
+        ],
+        anime: [
+          '/css/CSS/anime/animelobby.png',
+          '/css/CSS/anime/animehud.png'
+        ],
+        ayakaganyu: [
+          '/css/CSS/ayaka-and-ganyu/Screenshot 2025-04-13 221506.png',
+          '/css/CSS/ayaka-and-ganyu/Screenshot 2025-04-13 221722.png'
+        ],
+        blackandwhite: [
+          '/css/CSS/blackandwhite/Screenshot 2025-04-01 185127.png',
+          '/css/CSS/blackandwhite/Screenshot 2025-04-01 185240.png'
+        ],
+        zenith: [
+          '/css/CSS/Zenith/image_2025-02-03_201151720.png',
+          '/css/CSS/Zenith/image_2025-02-03_201123416.png'
+        ],
+        wolfey: [
+          '/css/CSS/Wolfey/image_2025-02-03_204500385.png',
+          '/css/CSS/Wolfey/image_2025-02-03_204553245.png'
+        ],
+        uwu: [
+          '/css/CSS/UwU/image_2025-02-03_201655485.png',
+          '/css/CSS/UwU/image_2025-02-03_201721030.png'
+        ],
+        plink: [
+          '/css/CSS/plink/image_2025-02-03_201459409.png',
+          '/css/CSS/plink/image_2025-02-03_201524413.png'
+        ],
+        pink: [
+          '/css/CSS/pink/image_2025-02-03_204325675.png',
+          '/css/CSS/pink/image_2025-02-03_204402274.png'
+        ],
+        jett: [
+          '/css/CSS/Jett/image_2025-02-03_203940844.png',
+          '/css/CSS/Jett/image_2025-02-03_204009826.png'
+        ],
+        japantown: [
+          '/css/CSS/Japan-Town/image_2025-02-03_193717030.png',
+          '/css/CSS/Japan-Town/image_2025-02-03_193755273.png'
+        ],
+        hover: [
+          '/css/CSS/hover/image_2025-02-03_203642444.png',
+          '/css/CSS/hover/image_2025-02-03_203625001.png'
+        ],
+        grey: [
+          '/css/CSS/Grey/image_2025-02-03_201339055.png',
+          '/css/CSS/Grey/image_2025-02-03_201322613.png'
+        ],
+        green: [
+          '/css/CSS/Green/image_2025-02-03_201945486.png',
+          '/css/CSS/Green/image_2025-02-03_202006017.png'
+        ],
+        egirl: [
+          '/css/CSS/Egirl/egirllobby.png',
+          '/css/CSS/Egirl/egirlhud.png'
+        ],
+        blue: [
+          '/css/CSS/Blue/bluelobby.png',
+          '/css/CSS/Blue/bluehud.png'
+        ],
+        irrvlohween: [
+          '/css/CSS/hween2024irrvlo/Screenshot_2024-10-01_092835.png',
+          '/css/CSS/hween2024irrvlo/Screenshot_2024-10-01_093017.png'
+        ],
+        sandynevermore: [
+          '/css/CSS/sandyNevermore/menu.png',
+          '/css/CSS/sandyNevermore/ingame.png'
+        ],
+        flow: [
+          '/css/CSS/flow/menu.png',
+          '/css/CSS/flow/game.png'
+        ],
+        BetterDefault: [
+          '/css/CSS/BetterDefault/btrdHome.png',
+          '/css/CSS/BetterDefault/btrdgame.png'
+        ],
+        enwa: [
+          '/css/CSS/enwa/Screenshot 2025-04-13 221849.png',
+          '/css/CSS/enwa/game.png'
+        ]
+      };
+
+      // If we have images listed for this card ID, populate the carousel.
+      if (images[cardId]) {
+        images[cardId].forEach((src, index) => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.style.display = index === 0 ? 'block' : 'none';
+          carouselImages.appendChild(img);
+        });
+      } else {
+        // Fallback: use the card's primary image if no mapping exists
+        const primaryImg = card.querySelector('img');
+        if (primaryImg && primaryImg.src) {
+          const img = document.createElement('img');
+          img.src = primaryImg.src;
+          img.style.display = 'block';
+          carouselImages.appendChild(img);
+        }
+      }
+
+      modal.style.display = 'block';
+      currentSlideIndex = 0;
+    }
+
+    function closeCarousel() {
+      const modal = document.getElementById('image-carousel-modal');
+      modal.style.display = 'none';
+    }
+
+
+    document.addEventListener('click', (event) => {
+      const modal = document.getElementById('image-carousel-modal');
+      if (modal.style.display === 'block' && event.target === modal) {
+        closeCarousel();
+      }
+    });
+
+    function changeSlide(direction) {
+      const modal = document.getElementById('image-carousel-modal');
+      const images = modal.querySelectorAll('.carousel-images img');
+      images[currentSlideIndex].style.display = 'none';
+      currentSlideIndex = (currentSlideIndex + direction + images.length) % images.length;
+      images[currentSlideIndex].style.display = 'block';
+    }
+  </script>
+  <style>
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #fff;
+      border-top: 5px solid #888;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</body>
+
+</html>

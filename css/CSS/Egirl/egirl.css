@@ -1,0 +1,1091 @@
+:root{
+    --secondary-1: rgba(0,0,0,0.6);
+    --secondary-2: rgba(0,0,0,0.6);
+    --secondary-3: hsl(150, 7%, 6%);
+    --secondary-4: hsl(160, 5%, 11%, 0.5);
+    --secondary-5: hsl(160, 5%, 11%, 0.6);
+    --secondary-6: hsl(345, 6%, 13%);
+    --secondary-7: hsl(0, 0%, 6%);
+    --hover: hsla(0, 0%, 100%, 0.059);
+    --background: hsla(0, 1%, 41%, .36);
+    --background-dark: hsla(0, 0%, 0%, 0.329);
+	--black: transparent;
+    --primary-1: #d984d3;
+	--primary-2: #d394ff;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#playerholderelement {
+    bottom: unset !important;
+    background-color: var(--main) !important;
+    padding: 10px;
+    border-radius: 5px;
+    top: 140px;
+    left: 10px;
+    opacity: var(--opacity);
+    text-shadow: var(--glow);
+    text-align: left;
+}
+* {
+    font-family: gamefont;
+}
+/* Ad Removal */
+.ad-bottom,
+.ad-left,
+.ad-change-weapon {
+    visibility: hidden !important;
+}
+
+/*Logo*/
+.interface .logo {
+   visibility: hidden
+}
+
+/* Background */
+#app > div.interface.text-2 > div.background {
+    background: url(https://i.pinimg.com/originals/83/b4/52/83b4526279888ba6830439677645ebae.gif) repeat;
+    background-size: cover !important;
+}
+.interface .nickname:after {
+    content: url(https://cdn3.emoji.gg/emojis/5513-pinkstar.gif) !important;
+    margin-top: -3%;
+}
+
+.end-modal {
+    background: url(https://animesher.com/orig/1/199/1991/19918/animesher.com_anime-girl-beauty-cute-1991844.gif) repeat !important;
+    background-size: cover !important;
+}
+
+/* Left Icons*/
+.left-icons {
+    background: #d394ff38 !important;
+	border-radius: 15px !important;
+	flex-direction: row !important;
+	top: 810px !important;
+	left: 350px !important;
+	z-index: 1 !important
+}
+
+.left-icons .icon-btn {
+    background: transparent;
+	border: none;
+    width: 107px;
+    border-radius: 0;
+	padding: 25px 
+}
+
+.left-icons .icon-btn svg {
+    display: none !important;
+}
+
+.icon-btn.text-1.FRIENDS,
+.icon-btn.text-1.INVENTORY {
+	margin-top: 15px !important
+}
+
+.icon-btn.text-1.HUB {
+	margin-right: 0px !important
+}
+
+.icon-btn.text-1.STORE {
+	margin-right: 19px !important
+}
+
+.icon-btn.text-1.SERVERS {
+	margin-right: 19px !important
+}
+
+.icon-btn.text-1.QUESTS {
+	margin-right: 19px !important
+}
+
+.icon-btn.text-1.FRIENDS {
+	margin-right: 34px !important
+}
+
+.icon-btn.text-1.INVENTORY {
+	margin-right: 19px !important
+}
+
+.icon-btn.text-1.MAP {
+	margin-right: 290px !important
+}
+
+.icon-btn.text-1.HUB:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	text-decoration-style: revert;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.STORE:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.SERVERS:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.QUESTS:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.FRIENDS:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.INVENTORY:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+.icon-btn.text-1.MAP:hover {
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+/*Left Interface (includes profile)*/
+.left-interface .profile {
+    background: #d394ff38;
+    width: 2500px;
+    height: 14px;
+    margin-bottom: 0px;
+}
+
+.left-interface .progress-label {
+    visibility: hidden;
+}
+
+.left-interface .exp-values {
+	display: none
+}
+
+.left-interface .progress-lvl {
+    margin-bottom: -910px;
+	margin-right: 1220px;
+	margin-left: -1090px;
+    visibility: visible;
+}
+
+.left-interface .progress-line {
+    background: transparent !important;
+    height: 18px;
+}
+
+.left-interface .progress {
+    background: #fff;
+}
+
+.left-interface .level {
+    display: none;
+}
+
+.left-interface .avatar-info{
+	position: absolute !important;
+    background: transparent !important;
+	margin-left: 475px !important;
+	margin-top: 900px !important;
+	border: none;
+}
+
+.player .levels {
+	display: none !important
+}
+
+.avatar.avatar {
+	border-radius: 5px;
+}
+
+.username {
+	display: none !important
+}
+
+.left-interface .user-info {
+	background: transparent;
+    position: fixed;
+	margin-left: 1575px;
+	border: none
+}
+.left-interface .money {
+    background: transparent !important;
+	left: 1030px;
+    margin-top: 910px;
+	border: none;
+}
+
+.left-interface .card-cont.money.diamonds {
+    background: transparent !important;
+	left: 1070px !important;
+    margin-top: 910px !important;
+	border: none;
+}
+
+.left-interface .avatar-info:hover,
+.left-interface .user-info:hover {
+    background: transparent;
+}
+
+/* Right Interface */
+.right-interface {
+	padding-top: 30px !important;
+}
+
+.right-interface {
+    z-index: 1 !important;
+}
+
+.soc-group:nth-child(1),
+.soc-group:nth-child(2) {
+	background: transparent !important;
+	border: none;
+    visibility: hidden;
+}
+
+
+.right-interface .settings {
+	visibility: hidden;
+	background: transparent;
+	border: none;
+	margin-left: -1280px !important;
+	margin-top: 790px !important;
+	font-family: gamefont !important;
+	font-size: 400% !important
+    }
+
+.right-interface .settings:after {
+	visibility: visible;
+	content: "SETTINGS";
+	font-family: gamefont !important;
+	font-size: 10px !important
+}
+
+.right-interface .settings:hover {
+	background: transparent;
+	font-family: gamefont;
+	text-decoration: overline;
+	transition: 0.6s;
+	transform: translateY(-0.8em) scale(1.1)
+}
+
+/*Daily Quest*/
+#dailyQuests {
+    position: fixed;
+	opacity: 1;
+    top: 130px;
+	right: 550px;
+	background: #d394ff38;
+    border: none;
+	border-radius: 15px;
+	z-index: -1 !important;
+	overflow: auto;
+}
+
+#dailyQuests {
+	margin-top: 80px
+}
+.right-interface .quest {
+	background: #d394ff38 !important;
+	backdrop-filter: blur(10000px) !important;
+}
+
+.right-interface .tabs {
+	background: #d394ff38 !important;
+	border: none !important;
+}
+
+.tab.event {
+	background: #d394ff38 !important;
+	border: none !important;
+}
+
+#dailyQuests .tip {
+	background: transparent !important;
+	border-radius: 0 !important;
+	margin-left: 15px;
+}
+
+.quest .progress-line {
+	background: transparent
+}
+
+#dailyQuests .reward {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.quest .amount {
+	color: #fff;
+}
+
+.quest .progress2 {
+	color: #fff;
+}
+
+.quest .progress-line .progress {
+	background: #fff
+}
+
+
+/* Container */
+.container {
+    background: #d394ff38;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.container-card {
+	background: #d394ff38 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 7px !important;
+}
+
+.container button {
+    background: #d984d3 !important;
+    border-radius: 5px !important;
+    transform: none !important;
+}
+
+.container button .border-top,
+.container button .border-bottom {
+    display: none;
+}
+
+.loader  {
+	background: transparent !important;
+	border: none !important;
+}
+
+.tabs {
+    background: #d394ff4d !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-right: none !important;
+}
+
+.tab {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.container {
+    background:#d394ff38 !important;
+	margin-top: 5px !important;
+	z-index: 999 !important;
+
+}
+
+.tab:hover,
+.nav:hover {
+	color: #ff88fe !important;
+	background: transparent !important;
+}
+
+.top-bar,
+.home,
+.text-2.name-page{
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important
+}
+
+.tab.active {
+	background: none !important;
+	color: grey !important;
+}
+
+.tab {
+	background: transparent;
+	color: white !important;
+}
+
+.nav.active {
+	color: #ffffff;
+}
+
+
+.add-friends,
+.top-items {
+    background: transparent !important;
+}
+
+.limit {
+    border-left: none !important;
+}
+
+.close{
+	background: transparent !important;
+}
+
+.container button .text {
+	transform: none !important
+}
+.reset-time,
+.info-awards,
+.news {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.settings .box {
+    background: transparent;
+    border: none;
+}
+
+.select-mods-cont {
+    width: 1000px !important;
+    height: 550px !important;
+	border: none !important;
+    border-radius: 1px !important;
+    background: #d394ff03 !important;
+    overflow: hidden;
+	z-index: 999 !important;
+    margin-right: 60px;
+	margin-bottom: 10px !important;
+}
+.wrapper[data-v-a1989eba] {
+    background-color: #d394ff4d;
+    border-radius: 1.25rem;
+}
+.select-regions-cont {
+    border: none !important;
+    border-radius: 12px !important;
+    background: #d394ff38 !important;
+    margin-bottom: -120px;
+}
+
+/* Play Content */
+.play-content .select-region,
+.play-content .select-mod{
+    background: #d394ff38;
+    border-radius: 7px;
+    border: none;
+	margin-bottom: -140px !important
+}
+
+.play-content .select-mod {
+	margin-top: 150px !important
+}
+
+.play-content .select-region:hover {
+    background: #d394ff38;
+	font-family: gamefont;
+}
+
+.play-content .select-mod:hover {
+    background: #d394ff38;
+	font-family: gamefont;
+}
+
+#play-btn {
+	background: transparent !important;
+	z-index: 10 !important;
+	left: -770px !important;
+	top: -20px !important;
+	transform: none !important;
+}
+
+#play-btn:hover {
+	background: rgba(0, 0, 0, 0.09) !important;
+    backdrop-filter:blur(10px);
+	transition: 0.6s !important;
+	border: solid 1px white;
+    transform: scale(0.9) !important;
+}
+
+#play-btn .border-top,
+#play-btn .border-bottom {
+    background: none !important;
+}
+
+.triangle {
+    display: none !important;
+}
+
+.select-mods-cont hr {
+	display: none !important
+}
+
+.custom-checkbox.private-btn {
+	margin-top: -21px !important;
+	margin-right: 240px !important;
+	font-size: 17px !important
+}
+
+.custom-checkbox.private-btn span:before {
+	display: none !important
+}
+
+.custom-checkbox.private-btn:hover {
+	background: transparent;
+	font-family: gamefont;
+	transition: 0.6s;
+	text-decoration: overline;
+	transform: translateY(-0.8em) scale(1.2)
+}
+
+/*Custom Checkbox*/
+.custom-checkbox > span[data-v-47e1b746]:before {
+    background-color: #ffffff08 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+/*Lobby Player*/
+.player .players-lobby {
+	margin-left: -700px !important;
+	margin-bottom: 200px !important
+}
+
+.heads .clan-tag {
+	color: white;
+	margin-left: -450px !important;	
+}
+
+.heads .nickname {
+	margin-left: -450px !important;	
+}
+
+/*Leaderbaord*/
+.leaderboard-cont .bg-light,
+.leaderboard-cont .background-leaders {
+	display: none !important
+}
+
+.clan-tag,
+.leaderboard-cont .top-name {
+	color: white !important
+}
+
+.lvl-leader {
+	background: transparent !important
+}
+
+/*Clans*/
+.clans .pages-nav.text-2,
+.clans {
+	background: transparent !important
+}
+
+.list-labels,
+.my-clan .label,
+.my-clan .champions-league,
+.my-clan .champions-scores,
+.my-clan .all-scores-label,
+.champions-container .awards-label {
+	color: white !important;
+}
+
+.circle {
+	display: none !important
+}
+
+/*Market*/
+.filter-name .input,
+.filter-rarity .input,
+.subjects,
+.filter-rarity .items {
+	border: none !important
+}
+
+.rar-skin {
+	border-radius: 10px !important;
+	left: 9px !important;
+	top: 25px !important;
+	width: 20px !important;
+	height: 6px !important;
+}
+
+.count{
+	background: transparent !important
+}
+
+.subject {
+	border-radius: 10px;
+}
+
+
+/*Video/Changelogs/Terms*/
+.tabs .label {
+	background: #d984d3
+}
+
+.live-streams,
+.live-streams .head,
+.card-list,
+.card-list .title,
+.card-list .card,
+.card-list .head.text-2,
+.changelog-item,
+.changelog-date.item{
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important
+}
+
+.terms .box {
+	border: none !important
+}
+/*Store*/
+.store-skins .hover,
+.store-skins .skin {
+	background: transparent;
+	backdrop-filter: blur(3px)
+}
+/*Servers*/
+.rules,
+.info-key-cont.enter,
+.server.locked .key,
+.server .session-id,
+.server.locked .button.join{
+	display: none !important
+}
+
+.container-games .input,
+.server,
+.messages.messages-cont {
+	background: transparent !important
+}
+
+.available-rooms,
+.online,
+.mod-name {
+	color: grey !important
+}
+
+.chat .name {
+    color: white;
+}
+
+.message {
+    color: grey;
+}
+.lvl{
+    color: pink 
+}
+.server.locked .left:before {
+	content: url(https://media.discordapp.net/attachments/1047811876098166804/1076116831665934416/New_Project.png?width=20&height=20);
+	width: 20px !important;
+}
+
+.server.locked .button.join {
+	display: none
+}
+
+.server:hover {
+	transform: scale(1.03);
+	transition: 0.2s
+}
+
+/*Quests*/
+.quest,
+.quest .rewards,
+.time-left,
+.reward {
+	background: #d394ff38 !important;
+}
+
+.quest .left {
+	border-radius: 5px !important;
+}
+
+/*Friends*/
+.friends .head-text,
+.friends .input {
+	background: transparent !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.reqs {
+	background: grey !important
+}
+
+.friend,
+.level-cont,
+.delete,
+.add {
+	background: rgba(0, 0, 0, 0.04) !important;
+	border: none !important
+}
+
+.level-label {
+	color: grey !important
+}
+
+/*Inventory*/
+.inventory .gun,
+.inventory .bottom,
+.inventory .avatar,
+.inventory .tab-bar {
+	background: transparent !important
+}
+
+.inventory .left {
+	background: rgba(0, 0, 0, 0.04) !important
+}
+
+.tab.active {
+	border: none !important
+}
+
+.inventory .level {
+	display: none !important
+}
+
+/*Level Rewards*/
+.levels .progress,
+.levels .progress-helper,
+.levels .lvl {
+	background: grey !important
+}
+
+.levels .description,
+.levels .level-head {
+	display: none !important
+}
+
+/*Settings*/
+.settings .header {
+	color: grey !important
+}
+
+.settings .input,
+.settings .items {
+	background: transparent !important;
+}
+
+/*Custom Match Maker*/
+.input,
+.items {
+	background: transparent !important;
+	border: none !important
+}
+
+.general-content.text-2 .header {
+	color: grey !important
+}
+/*Skin Inspect*/
+.wrapper-modal.alert-cont .name {
+	background: transparent !important;
+	border: none !important
+}
+
+.wrapper-modal.alert-cont .label {
+	background: grey !important;
+}
+
+/*Auth (Login/Signup)*/
+.card-cont.auth-form {
+	background: transparent !important;
+	border: none !important
+}
+
+.auth-form .btns button {
+    transform: none !important;
+    padding: 0px;
+    left: 415px;
+	top: 900px;
+}
+
+.auth-form button {
+    background: transparent !important;
+    box-shadow: none !important;
+	border: none !important
+}
+
+.auth-form button .border-top,
+.auth-form button .border-bottom {
+	display: none !important
+}
+
+.auth-form button .triangle {
+    display: none;
+}
+
+.auth-form .text {
+    font-size: 24px !important;
+}
+
+.auth-user .loading {
+    background: transparent;
+	border: none;
+	border-radius: 0;
+	width: 3400px;
+    height: 118px !important;
+}
+
+/*Live Stremas*/
+.right-interface .live-streams {
+	display: none
+}
+
+/*Notif*/
+.alert-default {
+    background: linear-gradient(262.54deg, #d394ff38 9.46%, #0f0f0f 100.16%) !important;
+    border-radius: 10px !important;
+}
+
+/*Porfile*/
+.profile .levels {
+	display: none
+}
+.animate-cont {
+    content: url(https://cdn3.emoji.gg/emojis/9796-pinkbubbleheart.gif);
+    height: 150px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*HUD*/
+.team-score .red {
+    position: fixed;
+    right: 990px !important; 
+}
+.team-score .blue{
+    position: fixed;
+    right: 760px !important; 
+}
+.desktop-game-interface .timer {
+    background: rgba(128, 128, 128, 0)  !important;
+    position: fixed !important;
+    left: 47.5%;
+    bottom: 92%;
+}
+
+.desktop-game-interface .kill.bg.text-1,
+.desktop-game-interface .death.bg.text-1 {
+    background: rgba(128, 128, 128, 0.6)  !important;
+}
+
+.mWwn,
+.list-weapons{
+	display: none !important
+}
+
+.state {
+	left: 750px !important
+}
+
+.cont-hp,
+.hp-title.text-1,
+.cont-endurance {
+    background: #d394ff38  !important;
+    
+}
+
+.endurance-progress {
+	background: #e29eff !important
+}
+
+.desktop-game-interface .instruction {
+	display: none !important
+}
+
+.ammunition {
+	margin-top: -850px !important;
+	margin-right: 685px !important
+}
+
+.name.text-1 {
+	display: none !important
+}
+
+/*Point*/
+.animate-cont .score {
+	color: #80808000 !important
+}
+
+/*End Screen*/
+.end-modal .bottom {
+    display: none;
+}
+
+.end-modal .team-list-players .card-cont:nth-child(1),
+.end-modal .team-list-players .card-cont:nth-child(2),
+.end-modal .items {
+    background: #d394ff38 !important;
+    box-shadow: none !important;
+}
+
+.end-modal .team-list-players .label {
+    background: transparent !important;
+}
+
+.end-modal .label-text,
+.end-modal .points {
+    color: white;
+}
+
+.end-modal .progress {
+    background: grey !important
+}
+
+.end-modal .team-list-players .list .player {
+    background: transparent;
+}
+
+.end-modal .lvl-leader {
+	background: rgba(0, 0, 0, 0.3) !important
+}
+
+/*Kill Bar Item*/
+.kill-bar-item {
+	background: #e1b5ff33 !important;
+}
+
+.kill-bar-item .name,
+.kill-bar-item .name-kill {
+	color: #fff;
+}
+
+/*Tab Lb*/
+.tab-info {
+	background: #fa94ff21 !important;
+	border-radius: 10px !important;
+	box-shadow: none !important;
+	
+}
+
+.tab-info .label.red,   
+.tab-info .label.blue {
+	display: none;
+}
+
+.tab-info .list-value,
+.tab-info .nickname.text-2.primary {
+	color: white !important
+}
+
+.tab-info .player {
+	background: #58009538
+}
+
+.head.text-2 {
+	background: transparent !important;
+	border: none;
+	box-shadow:none
+}
+
+/*Esc Interface*/
+.esc-interface .head-right button,
+.esc-interface .head-right button .border-top,
+.esc-interface .head-right button .border-bottom {
+	border-radius: 5px !important;
+    background: rgba(255, 137, 239, .07) !important;
+    box-shadow: none;
+}
+
+.esc-interface {
+	background: transparent !important;
+	backdrop-filter: blur(2px)
+}
+
+.esc-interface .head-right button:hover {
+    background: #d394ff38 !important;
+	transition: 0.3s;
+	transform: scale(1.1);
+}
+
+.esc-interface .left-container .player {
+    background: rgba(0, 0, 0, 0.07) !important
+}
+
+.esc-interface .right-container {
+    background: transparent !important;
+}
+
+.esc-interface .primary {
+	color: #fff !important;
+}
+
+.esc-interface .label,
+.head.text-1 {
+	color: #d394ff !important
+}
+
+.continue {
+	background: rgba(134, 0, 116, .13) !important;
+	box-shadow: none !important;
+}
+
+.continue .border-top,
+.continue .border-bottom {
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+.esc-interface .gun {
+	background: #d394ff14 !important;
+	border: 3px solid rgba(0, 0, 0, .29) !important
+}
+
+.gun .selected,
+.button.btn.rectangle {
+	background: grey !important;
+	border: none !important
+}
+
+.button.btn.rectangle .border-top.border,
+.button.btn.rectangle .border-bottom.border {
+	display: none !important
+}
+
+/*End Screen*/
+.end-modal .bottom {
+    display: none;
+}
+
+.end-modal .team-list-players .card-cont:nth-child(1),
+.end-modal .team-list-players .card-cont:nth-child(2),
+.end-modal .items {
+    background: rgba(0, 0, 0, 0.3) !important;
+    box-shadow: none !important;
+}
+
+.end-modal .team-list-players .label {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.end-modal .label-text,
+.end-modal .points {
+    color: white;
+}
+
+.end-modal .progress {
+    background: grey !important
+}
+
+.end-modal .team-list-players .list .player {
+    background: transparent;
+}
+
+.end-modal .lvl-leader {
+	background: rgba(0, 0, 0, 0.3) !important
+}
+
+/*Client*/
+.settings .box {
+	background: transparent !important;
+	border: none !important
+    }
